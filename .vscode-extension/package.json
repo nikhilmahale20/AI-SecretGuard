@@ -1,0 +1,40 @@
+{
+  "name": "neural-sentinel",
+  "displayName": "Neural-Sentinel Guard",
+  "description": "AI-Based Code Review & Secret Guard",
+  "version": "1.0.0",
+  "main": "./src/extension.js",
+  "engines": {
+    "vscode": "^1.80.0"
+  },
+  "categories": [
+    "Security",
+    "Linters"
+  ],
+ "activationEvents": [
+    "onCommand:neural-sentinel.setupGlobal",
+    "onCommand:neural-sentinel.scanFile"
+  ],
+  "contributes": {
+    "commands": [
+      {
+        "command": "neural-sentinel.setupGlobal",
+        "title": "Neural Sentinel: Enable Global Guardian"
+      },
+      {
+        "command": "neural-sentinel.scanFile",
+        "title": "Neural Sentinel: Scan Active File"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "tsc -p ./",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./"
+  },
+  "devDependencies": {
+    "@types/node": "^18.19.130",
+    "@types/vscode": "^1.80.0",
+    "typescript": "^5.1.3"
+  }
+}
