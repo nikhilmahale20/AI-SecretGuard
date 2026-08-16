@@ -1,6 +1,6 @@
 # 🧠 Neural Sentinel
 
-![Architecture](architecture.png)
+![AI Secret Guard](ui.png)
 
 ## 📖 Abstract
 
